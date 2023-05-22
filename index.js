@@ -10,24 +10,19 @@ const loadConfig = config();
 
 const PORT = process.env.PORT || 3000;
 
-async function startServer() {
-  try {
-    
-    connectDB();
+connectDB();
 
-    app.listen(PORT, () => {
-      console.log(`Server is running on port ${PORT}`);
-    });
+let server = app.listen(PORT, () => {
+  console.log('listening on port ' + PORT)
+});
 
-    
 
-  } catch (error) {
-    console.error('Failed to connect to the database:', error);
-  }
-}
 
 function connectDB() {
-  mongoose.connect(loadConfig.database.connection_string || "mongodb://localhost:27017/MyTop100Movies")
+  mongoose.connect(loadConfig.database.connection_string || "mongodb://localhost:27017/MyTop100Movies", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
       .then(() => {
           const db = mongoose.connection;
           db.on('error', (err) => console.error(err));
@@ -36,4 +31,5 @@ function connectDB() {
       .catch((err) => console.error(err));
 }
 
-startServer();
+
+module.exports = server;

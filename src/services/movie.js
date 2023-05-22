@@ -95,7 +95,7 @@ function moviesService({Movies, ipaddress, Discova}){
             }
         }
 
-        return true;
+        return {};
 
     } 
     

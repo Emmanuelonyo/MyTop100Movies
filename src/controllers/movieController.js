@@ -128,11 +128,7 @@ const Discova = require("../utils/discover");
                 })
             }
 
-            return res.status(200).send({
-                status: "success",
-                message: "Movies deleted successfully",
-                data: result
-            })
+            return res.status(204).send(result)
             
         } catch (error) {
             return res.status(500).send({

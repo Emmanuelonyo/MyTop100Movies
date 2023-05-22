@@ -1,5 +1,5 @@
 database:
-  connection_string: mongodb://127.0.0.1:27017/MyTop100Movies
+  connection_string: mongodb+srv://Crud_app:05fqBpi3DyJLdhXl@atlascluster.qxfhxmn.mongodb.net/MyTop100Movies
 
 themoviedb:
   apiKey: eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4YWY1NDJlN2EwOGZhMTlkMzViYzZhZDkyOTQ3NTIyMSIsInN1YiI6IjY0NjdmZjFlZDE4NTcyMDEwMTk3ODEzZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.QCqEe8FpsZrO8SBY6SORnoaQC8hEQahRVjC-FTUosVM
