@@ -1,6 +1,9 @@
 {
   "name": "mytop100movies",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=14.20.1"
+  },
   "description": "a simple test project by montech",
   "main": "index.js",
   "scripts": {
