@@ -71,4 +71,6 @@ To import these API endpoints into Postman, follow the steps below:
 5. Click the "Continue" button.
 6. Review the imported collection in Postman and click the "Import" button to finalize the import.
 
+**Collection:** https://cybercraft.postman.co/workspace/MyTop100Movies~aaf9a037-5cd1-4e20-8c88-809385f84e1c/collection/12965078-a15d35a5-2a6d-449e-a610-c2550cef7f2d?action=share&creator=12965078
+
 Once imported, you can explore and test the API endpoints within Postman.
