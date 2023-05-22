@@ -10,7 +10,7 @@ describe('MY TOP 100 MOVIES API', () => {
   beforeAll(async () => {
     mongoServer = await MongoMemoryServer.create();
     const mongoUri = mongoServer.getUri();    
-    process.env.MONGODB_URI = `${mongoUri}/MyTop100Movies`;
+    process.env.MONGODB_URI = `${mongoUri}/test`;
 
     const initTask = {
         title: "Wednesday",
